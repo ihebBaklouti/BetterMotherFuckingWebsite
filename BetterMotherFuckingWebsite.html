@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BetterMotherfuckingWebsite</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style type="text/css">
         body {
             margin: 40px auto;
@@ -25,6 +28,35 @@
 
 <body>
     <header>
+        <div class="container">
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Pimp de la popup</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p>veux-tu aller sur xxxvidsxxx ?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" onclick="myFunction()">Yes</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <script>
+            function myFunction() {
+                location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            }
+        </script>
         <h1>This is <em>still</em> a motherfucking website.</h1>
         <aside>And it's more fucking perfect than the last guy's.</aside>
     </header>
@@ -59,7 +91,7 @@
     <h2>Epilogue</h2>
     <p>Inspired by the geniuses behind <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a> and <a href="http://txti.es">txti</a>.</p>
     <p>This page—that isn't a total fucking eyesore—was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.
-        <script async="" src="//www.google-analytics.com/analytics.js"></script>
+        <!--   <script async="" src="//www.google-analytics.com/analytics.js"></script>
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -73,8 +105,41 @@
             })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
             ga('create', 'UA-46163202-2', 'auto');
             ga('send', 'pageview');
-        </script>
+        </script> -->
     </p>
+    <button type="button" class="btn btn-primary" onclick="change()">Mode Psychédélique</button>
+    <script>
+        function change() {
+            let color = 'magenta';
+            document.body.style.background = color;
+            let colorText = 'blue';
+            var p = document.getElementsByTagName("P");
+            var i;
+            for (i = 0; i < p.length; i++) {
+                p[i].style.color = "blue";
+                p[i].style.fontFamily = "courier";
+            }
+            var h = document.getElementsByTagName("H1");
+            var i;
+            for (i = 0; i < h.length; i++) {
+                h[i].style.color = "green";
+                h[i].style.fontFamily = "Comic Sans";
+            }
+            var h = document.getElementsByTagName("H2");
+            var i;
+            for (i = 0; i < h.length; i++) {
+                h[i].style.color = "green";
+                h[i].style.fontFamily = "Comic Sans";
+
+            }
+            var h = document.getElementsByTagName("H3");
+            var i;
+            for (i = 0; i < h.length; i++) {
+                h[i].style.color = "green";
+                h[i].style.fontFamily = "Comic Sans";
+            }
+        }
+    </script>
 </body>
 
 </html>
